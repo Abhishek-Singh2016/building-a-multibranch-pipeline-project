@@ -9,7 +9,7 @@ pipeline {
         CI = 'true'
     }
        
-        stage('Deliver for development') {
+    stage('Deliver for development') {
             when {
                 branch 'development'
             }
