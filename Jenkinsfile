@@ -8,11 +8,7 @@ pipeline {
     environment {
         CI = 'true'
     }
-       stage('Test') {
-            steps {
-                sh './jenkins/scripts/test.sh'
-            }
-        }
+       
         stage('Deliver for development') {
             when {
                 branch 'development'
